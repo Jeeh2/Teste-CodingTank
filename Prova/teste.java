@@ -54,7 +54,7 @@ public class testeAda {
             double altura = Double.parseDouble(dadosPessoas[1][i]);// altura das pessoas
             double peso = Double.parseDouble(dadosPessoas[2][i]); //peso das pessoas
 
-            double media2 = peso / (altura * altura);
+            double media2 = (altura * altura) / peso;
 
 
             System.out.printf("O IMC de " + dadosPessoas[0][i] + " é de: " + "%.2f", media2);
@@ -165,7 +165,7 @@ public class testeAda {
             double altura5 = Double.parseDouble(dadosPessoas[1][i]);
             double peso5 = Double.parseDouble(dadosPessoas[2][i]);
 
-            double imc = peso5 / (altura5 * altura5);
+            double imc = (altura5 * altura5) / peso5;
 
             if (imc > maiorIMC1) {
                 maiorIMC1 = imc;
@@ -189,7 +189,7 @@ public class testeAda {
             double altura6 = Double.parseDouble(dadosPessoas[1][i]);
             double peso6 = Double.parseDouble(dadosPessoas[2][i]);
 
-            double imc = peso6 / (altura6 * altura6);
+            double imc = (altura6 * altura6) / peso6;
 
             if (imc < menorIMC) {
                 menorIMC = imc;
